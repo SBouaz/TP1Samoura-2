@@ -6,7 +6,7 @@ public class Ronin extends Humain {
 		super(nom, argent, boisson);
 		this.honneur=1;
 	} 
-	public void donner(Commercant c, int montant) {
+	public void donner(int montant ,Commercant c) {
         if (this.getArgent() >= montant) {
             this.perdreArgent(montant);
             c.recevoir(montant);
